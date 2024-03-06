@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studentdetails</title>
+    <link rel="shortcut icon" href="studentsd images\icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    form {
+        margin: 100px;
+        height: 590px;
+        width: 1000px;
+    }
+
+    body {
+
+        background-color: rgb(21, 233, 233);
+
+
+
+    }
+
+    h1 {
+        margin-right: 600px;
+        color: rgb(241, 9, 9);
+    }
+
+    
+</style>
+
+<body>
+            <form method="get">
+                <h1>Local Storage Details</h1>
+                <br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="inputCity" class="form-label">First Name :</label>
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name "
+                            id="myText">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="inputCity" class="form-label">Last Name :</label>
+                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name"
+                            id="yText">
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-3" style="margin-left:90px ;">
+                    <label for="inputCity" class="form-label">City :</label>
+                    <input type="text" class="form-control" id="city">
+                </div>
+                <br>
+                <div class="col-md-3" style="margin-left:90px ;">
+                    <label for="inputage" class="form-label">Age :</label>
+                    <input type="age" class="form-control" id="mText">
+                </div>
+                <br>
+                <div class="col-md-3" style="margin-left:90px ;">
+                    <label for="inputcountry" class="form-label">Country :</label>
+                    <div class="col">
+
+                        <select name="country" id="con">
+                            <option>select</option>
+                            <option>india</option>
+                            <option>Austurila</option>
+                            <option>china</option>
+                            <option>japan</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-3" style="margin-left:90px ;">
+                    <label for="phone number" class="form-label">
+                        <h5>Phone number :</h5>
+                    </label>
+                    <input type="text" class="form-control" id="reddy">
+                </div>
+
+                <br>
+
+                <button onclick="ravi()" style="margin-left: 170px;">Save button</button>
+
+            </form>
+        </section>
+
+
+
+
+       
+
+    </main>
+    <script>
+        var ravi = () => {
+            var myContent = document.getElementById("myText").value;
+            localStorage.setItem("first name", myContent);
+            var my = document.getElementById("yText").value;
+            localStorage.setItem("last name", my);
+            var y = document.getElementById("mText").value;
+            localStorage.setItem("age", y);
+
+            var s = document.getElementById("con").value;
+            localStorage.setItem("country", s);
+
+            var p = document.getElementById("reddy").value;
+            localStorage.setItem("phonenumber", p);
+
+            var r = document.getElementById("city").value;
+            localStorage.setItem("city", r);
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

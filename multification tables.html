@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables of multiplication 2to20</title>
+    <style>
+        table {
+            padding: 20px;
+            border: 2px solid rgb(58, 172, 83);
+        }
+
+        td {
+            font-size: medium;
+            padding: 20px;
+            font-weight: bolder;
+            border: 3px solid rgb(61, 150, 20);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center"> tabels </h1
+        >
+    <script>
+        
+        document.write("<table align='center'>")
+        document.write("<tr>")
+        for (let i = 1; i <= 10; i++) {
+            document.write("<td>")
+            for (let j = 1; j <= 10; j++) {
+                document.write(i  + "x" + j + "=" + i * j + "<br>")
+            }
+            document.write("</td>")
+        
+            
+        }
+        document.write("</tr>")
+        document.write("<tr>")
+        for (let i = 11; i <= 20; i++) {
+            document.write("<td>")
+            for (let j = 1; j <= 10; j++) {
+                document.write(i  + "x" + j + "=" + i * j + "<br>")
+            }
+            document.write("</td>")
+        
+            
+        }
+        document.write("</tr>")
+        document.write("</table>")
+    </script>
+
+</body>
+
+</html>

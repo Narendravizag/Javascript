@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table{
+    padding: 10px;
+    border: 3px solid rgb(211, 43, 43);
+  }
+  td{
+    font-size: 18px;
+    font-weight: bolder;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: #26a9dd;
+  }
+   th{
+    font-size: 18px;
+    font-weight: bolder;
+    border: 2px solid rgb(145, 42, 42);
+    padding: 10px;
+    background-color: pink;
+  
+  } 
+  tr{
+    font-size: 18px;
+    font-weight: bolder;
+    border: 2px solid rgb(19, 134, 71);
+    padding: 30px;
+    background-color: pink;
+  }
+  
+  </style>
+</head>
+<body>
+  <script>
+  
+  var employee=[
+    ["01","NARENDRA",348471,"DSNR","narendra123@gmail.com","JAVA"],
+    ["02","NAGENDRA",342450,"HYD","nagendra95@gmail.com","PHYTHON"],
+    ["03","NAVEEN",335667,"JBS","naveen@gmail.com","SAP"],
+    ["04","SAMANTHA",143146,"SECBAD","samantha@gmail.com","DESIGNER"],
+
+  ]
+  document.writeln("<table border=1><tr><th>S.NO</th><th>Name</th><th>ID</th><th>Place</th><th>E-mail</th><th>Role</th>");
+    employee.forEach(element=>document.writeln("<tr><td>"+element[0]+"</td><td>"+element[1]+"</td><td>"+element[2]+"</td><td>"+element[3]+"</td><td>"+element[4]+"</td><td>"+element[5]+"</td></tr>"));
+    document.writeln("</table>");
+  
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> prime number genaration</title>
+</head>
+<body>
+	<script>
+		const  isprimenumber=(number)=>{
+			for(var i=2;i<=number/2;i++){
+				if(number % i==0){
+					return false;
+				}
+
+		}
+		return true;
+};
+		function getAllprimenumbers(number){
+			var primenumbers=[];
+			for(i=2;i<=number;i++){
+				if(isprimenumber(i)) primenumbers.push(i);
+			}	
+        return primenumbers;
+       }
+       document.writeln(getAllprimenumbers(10));
+</script>
+</body>
+</html>	<s>qaqa</s>
